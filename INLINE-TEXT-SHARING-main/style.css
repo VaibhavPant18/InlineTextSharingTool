@@ -1,0 +1,146 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  .cf:before,
+  .cf:after {
+    display: table;
+    content: ' ';
+  }
+  .cf:after {
+    clear: both;
+  }
+  .cf {
+    *zoom: 1;
+  }
+  body {
+    margin: 0;
+  }
+  .site-header {
+    background-color: #00fc50;
+    text-align: center;
+  }
+  .site-header h1{
+    padding: 25px;
+    text-transform: uppercase;
+    color: rgb(8, 8, 8);
+    font-size: 100px;
+    margin: 0;
+  }
+  @media screen and (min-width: 630px) {
+    .site-header {
+      text-align: none;
+    }
+    .site-header h1{
+      font-size: 25px;
+      float: left;
+    }
+  }
+  .demo-content {
+    max-width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 24px;
+    line-height: 1.4;
+    margin-top: 100px;
+    color: #080808;
+    position: relative;
+    padding: 32px;
+    background-color: #e411a1;
+    border-radius: 3px;
+  }
+  .demo-content p {
+    margin-top: 0;
+  }
+  .demo-content p:last-child,
+  .demo-content p:only-child {
+    margin-bottom: 0;
+  }
+  ::-moz-selection {
+    background: #0cd6f0;
+    color: #000;
+  }
+  ::selection {
+    background: #e0b4d1;
+    color: rgb(231, 3, 182);
+  }
+  .sharing {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    -webkit-transition: -webkit-transform 0.25s ease-in-out;
+    transition: -webkit-transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    background-color: #00d0ff;
+    border-radius: 3px;
+  }
+  .sharing svg {
+    fill: #a1b4a4;
+    display: block;
+  }
+  .sharing button {
+    border-radius: 0;
+    border: 0;
+    display: block;
+    padding: 8px 6px;
+    cursor: pointer;
+    outline: 0;
+    font-size: 14px;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    margin: 0;
+    background-color: transparent;
+  }
+  .sharing button:hover .icon,
+  .sharing button:focus .icon,
+  .sharing button:active .icon {
+    fill: rgb(16, 15, 15);
+  }
+  .sharing__buttons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+  }
+  .sharing__triangle {
+    background-color: #00d0ff;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, 100%, 0) rotate(45deg);
+            transform: translate3d(-50%, 100%, 0) rotate(45deg);
+  }
+  .sharing--shown {
+    visibility: visible;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  #share {
+    padding-left: 12px;
+  }
+  #tweet {
+    padding-right: 12px;
+  }
+  #help {
+    padding: 15px;
+    background-color: #0fadf1;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    text-align: center;
+  }
